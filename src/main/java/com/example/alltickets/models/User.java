@@ -41,7 +41,7 @@ public class User implements UserDetails {
 
 
     @PrePersist
-    private void init() {
+    public void init() {
         dateOfCreated = LocalDateTime.now();
     }
 
